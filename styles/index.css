@@ -7,6 +7,8 @@
     --primary-font: #000000;
     --secondary-font: #FFFFFF;
     --base-radius: 8px;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -20,16 +22,19 @@ body {
 }
 
 header {
-    color: var(--secondary-font);
-    background-color: var(--secondary-background);
-    height: 120px;
+    display: flex;
+    flex-direction: column;
 }
 
 .title-block {
+    color: var(--secondary-font);
+    background-color: var(--secondary-background);
+    
+    height: 90px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .title-text {
@@ -39,41 +44,22 @@ header {
 
 .title-text h1 {
     font-size: 32px;
-    margin-bottom: 16px;
+    margin: 0;
+    margin-bottom: 12px;
 }
 
 .title-text h3 {
     margin: 0;
-}
-
-.dropdown-btn {
-    height: 48px;
-    width: 48px;
-    
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-.dropdown-btn input {
-    grid-column: 1 / 1;
-    grid-row: 1 / 1;
-    height: 48px;
-    width: 48px;
-    padding: 8px;
-}
-
-.dropdown-btn i {
-    grid-column: 1 / 1;
-    grid-row: 1 / 1;
-    scale: 2;
+    margin-left: 4px;
 }
 
 nav {
+    height: 90px;
     display: flex;
-    height: 120px;
     justify-content: space-around;
+    
     background-color: var(--secondary-background);
+
     border-bottom-left-radius: var(--base-radius);
     border-bottom-right-radius: var(--base-radius);
 }
@@ -81,17 +67,18 @@ nav {
 nav a {
     color: var(--secondary-font);
 
-    height: 70px;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    text-decoration: none;
     text-align: center;
+    text-decoration: none;
 }
 
 .link-frame {
     margin-bottom: 4px;
-    height: 52px;
-    width: 52px;
+    height: 60px;
+    width: 64px;
     border-radius: var(--base-radius);
 
     background-color: var(--primary-background);
@@ -100,9 +87,10 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .link-frame i {
-    scale: 1.5;
+    scale: 1.6;
     margin: 8px;
 }
