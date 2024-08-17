@@ -14,9 +14,6 @@
 body {
     margin: 0;
     background-color: var(--primary-background);
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
 }
 .page-container {
     min-height: 100vh;
