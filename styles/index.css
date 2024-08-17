@@ -12,16 +12,25 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    background-color: var(--primary-background);
     margin: 0;
-    min-height: 100vh;
-    display: flex;
+    background-color: var(--primary-background);
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; */
+}
+.page-container {
+    min-height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 header {
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .title-block {
     color: var(--secondary-font);
@@ -90,12 +99,23 @@ nav a:active {
     font-size: 28px;
     margin: 8px;
 }
+main {
+    padding-top: 180px;
+    padding-bottom: 60px;
+}
+main img {
+    width: 360px;
+}
 footer {
     height: 60px;
     background-color: var(--secondary-background);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 .footer-links {
     display: flex;

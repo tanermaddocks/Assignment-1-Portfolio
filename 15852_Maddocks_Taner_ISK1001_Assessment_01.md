@@ -33,7 +33,7 @@ The Mobile pages will be the default display for the website. Changes will occur
 @media only screen and (min-width: 576px)
 ```
 For the mobile site, the major features are;
-- The header's position will be sticky.
+- The header's position will be fixed.
 - The navbar sits underneath the title block.
 - On the projects page the projects are in one column.
 - Unlike on the tablet and desktop, scrolling is needed to see all content.
