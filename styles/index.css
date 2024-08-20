@@ -168,7 +168,7 @@ footer {
     }
     /* Main Changes */
     main {
-        padding-top: 120px;
+        padding-top: 180px;
     }
     /* Footer Changes */
     footer {
@@ -235,6 +235,7 @@ footer {
     }
     /* Footer Changes */
     footer {
+        position: fixed;
         height: 16vh;
         width: 300px;
         flex-direction: column;
