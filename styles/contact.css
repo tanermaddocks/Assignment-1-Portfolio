@@ -73,6 +73,7 @@ form {
 }
 .form-q textarea {
     font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif
     padding: 4px;
     border: 2px solid var(--primary-font);
     border-radius: var(--base-radius);
