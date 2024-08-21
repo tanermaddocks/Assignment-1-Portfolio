@@ -31,6 +31,8 @@ article {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 .con-link a:link {
     color: var(--primary-font);
@@ -94,5 +96,28 @@ form {
 @media only screen and (min-width:576px) {
     article {
         font-size: 1.4rem;
+        min-width: 0;
+        max-width: 580px;
+    }
+    .con-link {
+        max-width: 540px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .con-link a i {
+        font-size: 64px;
+    }
+    #sub-btn {
+        width: 104px;
+        height: 48px;
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (min-width:992px) {
+    article {
+        font-size: 1.6rem;
+    }
+    .con-link a i {
+        font-size: 76px;
     }
 }
