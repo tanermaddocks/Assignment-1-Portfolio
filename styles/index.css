@@ -3,8 +3,8 @@
 :root {
     --primary-background: #003566;
     --secondary-background: #001D3D;
-    --primary-color: #FFD60A;
-    --secondary-color: #FFC300;
+    --primary-color: #d8b400;
+    --secondary-color: #c99c0a;
     --tertiary-color: #0068c8;
     --primary-font: #000000;
     --secondary-font: #FFFFFF;
@@ -69,19 +69,6 @@ nav a {
     align-content: center;
     text-align: center;
     text-decoration: none;
-    transition: scale 0.5s;
-}
-nav a:hover {
-    scale: 1.1;
-    .link-frame {
-        background-color: var(--tertiary-color);
-    }
-}
-nav a:active {
-    scale: 1.1;
-    .link-frame {
-        background-color: var(--tertiary-color);
-    }
 }
 .link-frame {
     margin-bottom: 4px;
@@ -212,12 +199,22 @@ footer {
         border-radius: var(--base-radius);
         justify-content: flex-start;
         align-items: center;
+        transition: scale 0.5s;
     }
     nav a:hover {
+        scale: 1.1;
         background-color: var(--tertiary-color);
+        .link-frame {
+            background-color: var(--tertiary-color);
+        }
+        
     }
     nav a:active {
+        scale: 1.1;
         background-color: var(--tertiary-color);
+        .link-frame {
+            background-color: var(--tertiary-color);
+        }
     }
     .link-frame {
         width: 56px;

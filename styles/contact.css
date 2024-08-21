@@ -113,11 +113,24 @@ form {
         font-size: 1.3rem;
     }
 }
+@keyframes wobble {
+    0% {rotate: 0deg}
+    25% {rotate: 8deg}
+    50% {rotate: 0deg}
+    75% {rotate: -8deg;}
+    100% {rotate: 0deg;}
+}
 @media only screen and (min-width:992px) {
     article {
         font-size: 1.6rem;
     }
     .con-link a i {
         font-size: 76px;
+        transition: scale 0.3s;
+    }
+    .con-link a i:hover {
+        scale: 1.1;
+        animation-name: wobble;
+        animation-duration: 0.3s;
     }
 }
