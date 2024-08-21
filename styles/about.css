@@ -23,10 +23,12 @@ main {
 .about-info {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .about-info article {
-    max-width: 320px;
+    min-width: 300px;
     background-color: var(--primary-color);
     margin: 20px;
     border-radius: var(--base-radius);
@@ -37,13 +39,16 @@ main {
     margin-top: 4px;
     margin-bottom: 0;
 }
+.about-me p {
+    margin-right: 8px;
+}
 .about-skills {
-    min-width: 320px;
-    max-height: 430px;
+    width: fit-content;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
 }
+/* Tablet screen size up to 768px */
 @media only screen and (min-width:576px) {
     .about-img {
         margin-top: 40px;
@@ -53,9 +58,13 @@ main {
     }
     .about-info article {
         font-size: 1.4rem;
-        max-width: 420px;
+        max-width: 100%;
+    }
+    .about-skills {
+        max-width: 360px;
     }
 }
+/* Tablet screen size up to 992px */
 @media only screen and (min-width:768px) {
     .about-info {
         flex-direction: row;
@@ -63,6 +72,7 @@ main {
         margin-bottom: 40px;
     }
 }
+/* Desktop screen size from 992px */
 @media only screen and (min-width:992px) {
     .about-img img{
         width: 600px;
